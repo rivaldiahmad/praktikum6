@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1543206434 source:c:\users\asus\documents\praktikum6\latihan1\kalkulator.cpp
+	<iostream>
+
+1543231730 source:c:\users\asus\documents\praktikum6\latihan1\main.cpp
+	<iostream>
+	"kalkulator.h"
+
+1543205876 c:\users\asus\documents\praktikum6\latihan1\kalkulator.h
+
