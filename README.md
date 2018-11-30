@@ -15,15 +15,15 @@ yang ingin kita buat jalan kan project itu dengan menggunakan fungsi juga
 **Kode Program**
 ##Header 
 ```
-#ifndef KAL_H_INCLUDED
-#define KAL_H_INCLUDED
+#ifndef KALKULATOR_H_INCLUDED
+#define KALKULATOR_H_INCLUDED
 int kali(int, int);
 double bagi(int, int);
 int tambah(int, int);
 int kurang(int, int);
 
 
-#endif // KAL_H_INCLUDED
+#endif // KALKULATOR_H_INCLUDED
 ##isi
 ```
 #include<iostream>
@@ -48,32 +48,32 @@ return a-b;
 ##utama
 ```
 #include<iostream>
-#include<kal.h>
+#include"kalkulator.h"
 
 using namespace std;
 
-int inputData(string v="A");
+int inputData(string v="a");
 
 int main(int argc, char const *argv[])
 {
     int a, b;
     a = inputData();
-    b = inputData("B");
+    b = inputData("b");
 
-    cout << "\nHasil Perkalian AxB adalah: " << kali(a, b) << endl;
-    cout << "\nHasil Pembagian A/B adalah: " << bagi(a, b) << endl;
-    cout << "\nHasil Penambahan A+B adalah: " << tambah(a, b)<< endl;
-    cout << "\nHasi Pengurangan A-B adalah: " << kurang(a, b) << endl;
-
+    cout << "\nHasil perkalian axb adalah: " << kali(a,b);
+    cout << "\nHasil pembagian a/b adalah: " << bagi(a,b);
+    cout << "\nHasil penambahan a+b adalah: " << tambah(a,b);
+    cout << "\nHasil pengurangan a-b adalah: " << kurang(a,b);
 
     return 0;
 }
-int inputData(string v)
-{
-    cout << "masukan Bilagan " << v << ": ";
+
+int inputData(string v) {
+    cout << "masukan bilangan " << v << ": ";
     int bil;
     cin >> bil;
     return bil;
+
 }
 ```
 **gambar program**
