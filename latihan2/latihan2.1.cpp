@@ -10,7 +10,7 @@ void tukar (int *a, int *b){
 
 }
 
-main (){
+int main (){
 
     int a = 5, b = 8;
     cout << "\nSebelum di tukar\n";
